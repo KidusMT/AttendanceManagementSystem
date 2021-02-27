@@ -1,0 +1,17 @@
+2021-02-27 14:25:29,003 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-02-27 14:28:08,979 [Worker-5: Creating javafx-archetype-simple] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\com.edu.miu.mpp.project\pom.xml
+2021-02-27 14:28:13,636 [Worker-5: Creating javafx-archetype-simple] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AttendanceSystem:com.edu.miu.mpp.project:0.0.1-SNAPSHOT @ C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\com.edu.miu.mpp.project\pom.xml.
+2021-02-27 14:28:16,189 [Worker-5: Creating javafx-archetype-simple] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.edu.miu.mpp.project/src/main/java
+2021-02-27 14:28:16,190 [Worker-5: Creating javafx-archetype-simple] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.edu.miu.mpp.project/src/test/java
+2021-02-27 14:28:17,492 [Worker-5: Creating javafx-archetype-simple] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2021-02-27 14:28:20,926 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-27 14:28:20,927 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\com.edu.miu.mpp.project\src\main\resources
+2021-02-27 14:28:20,930 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-27 14:28:20,930 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\com.edu.miu.mpp.project\src\test\resources
+2021-02-27 14:30:03,434 [Worker-16: Creating javafx-archetype-simple] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\pom.xml
+2021-02-27 14:30:04,119 [Worker-16: Creating javafx-archetype-simple] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.miu.edu.cs.mpp.project:AttendanceManagementSystem:0.0.1-SNAPSHOT @ C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\pom.xml.
+2021-02-27 14:30:05,008 [Worker-16: Creating javafx-archetype-simple] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AttendanceManagementSystem/src/main/java
+2021-02-27 14:30:05,009 [Worker-16: Creating javafx-archetype-simple] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AttendanceManagementSystem/src/test/java
+2021-02-27 14:30:05,194 [Worker-16: Creating javafx-archetype-simple] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2021-02-27 14:30:05,783 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-02-27 14:30:05,784 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\main\resources
