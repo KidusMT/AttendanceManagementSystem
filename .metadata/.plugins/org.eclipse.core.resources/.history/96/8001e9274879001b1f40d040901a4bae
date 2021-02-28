@@ -1,0 +1,5 @@
+module com.miu.edu.cs.mpp.project.AttendanceManagementSystem {
+    requires javafx.controls;
+	requires javafx.graphics;
+    exports com.miu.edu.cs.mpp.project.AttendanceManagementSystem;
+}
