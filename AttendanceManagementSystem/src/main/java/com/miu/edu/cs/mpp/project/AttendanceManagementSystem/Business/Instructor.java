@@ -33,6 +33,9 @@ public class Instructor {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
+	@Override
+	public String toString() {
+		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
+
 }

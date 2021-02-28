@@ -33,4 +33,9 @@ public void setTo(LocalDate to) {
 public void addAttendace(DayAttendanceSheet attendance) { // 0..* unidirectional
 	attendances.add(attendance);
 }
+@Override
+public String toString() {
+	return "Report [from=" + from + ", to=" + to + "]";
+}
+
 }

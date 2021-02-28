@@ -26,4 +26,13 @@ public void setStatus(boolean status) {
 public void setAttendanceSheet(DayAttendanceSheet entry) {
 	this.attendanceSheet=entry;
 }
+
+
+@Override
+public String toString() {
+	return "AttendanceSheetEntry [status=" + status + ", student=" + student +  "]";
+}
+
+
+
 }

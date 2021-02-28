@@ -22,5 +22,10 @@ public String getCourseName() {
 public void setCourseName(String courseName) {
 	this.courseName = courseName;
 }
+@Override
+public String toString() {
+	return "Course [courseNo=" + courseNo + ", courseName=" + courseName + "]";
+}
+
 
 }

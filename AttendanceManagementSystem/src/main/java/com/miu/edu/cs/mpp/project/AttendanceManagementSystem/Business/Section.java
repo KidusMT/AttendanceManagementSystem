@@ -76,8 +76,5 @@ public class Section {
 		student.setInrolledSection(this);
 		students.add(student);
 	}
-	
-	
-	
 
 }
