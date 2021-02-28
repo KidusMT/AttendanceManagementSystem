@@ -18,7 +18,7 @@ public class Welcome extends Application {
 	public void start(Stage stage) throws IOException {
         var javaVersion = SystemInfo.javaVersion();
         var javafxVersion = SystemInfo.javafxVersion();
-        Parent root = FXMLLoader.load(getClass().getResource("captureAttendance.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Welcome.fxml"));
 
         var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
         var scene = new Scene(root);
