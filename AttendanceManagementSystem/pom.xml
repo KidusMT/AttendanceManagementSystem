@@ -40,7 +40,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.captureattendance.AttendanceCapture</mainClass>
+                            <mainClass>com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance.AttendanceGenerate</mainClass>
                         </configuration>
                     </execution>
                     <execution>
@@ -49,7 +49,7 @@
                             <options>
                                 <option>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</option>
                             </options>
-                            <mainClass>com.miu.edu.cs.mpp.project.AttendanceManagementSystem.App</mainClass>
+                            <mainClass>com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance.AttendanceGenerate</mainClass>
                         </configuration>
                     </execution>
                 </executions>
