@@ -1,0 +1,32 @@
+package com.miu.edu.cs.mpp.project.AttendanceManagementSystem;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+
+/**
+ * JavaFX App
+ */
+public class App extends Application {
+
+    @Override
+    public void start(Stage stage) {
+    	FXMLLoader spinnerSceneLoader = new FXMLLoader(getClass().getResource("Spinner.fxml"));
+        Parent root = (Parent) spinnerSceneLoader.load();
+        
+        SpinnerController ctrlrPointer = (SpinnerController) spinnerSceneLoader.getController();
+        
+        
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+
+}

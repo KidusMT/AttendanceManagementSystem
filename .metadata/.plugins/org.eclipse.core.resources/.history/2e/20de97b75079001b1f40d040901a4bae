@@ -1,0 +1,5 @@
+package com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.login;
+
+public class LoginController {
+
+}

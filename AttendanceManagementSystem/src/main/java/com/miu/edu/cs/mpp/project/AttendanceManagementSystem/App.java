@@ -29,8 +29,15 @@ public class App extends Application {
         stage.show();
     }
 
+<<<<<<< HEAD
    /* public static void main(String[] args) {
        // launch();
     }
 */
+=======
+//    public static void main(String[] args) {
+//        launch();
+//    }
+
+>>>>>>> login
 }

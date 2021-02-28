@@ -648,6 +648,7 @@ java.nio.file.NoSuchFileException: C:\Users\KidusMT\Desktop\MPP-Project\Attendan
 2021-02-27 22:37:22,855 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\main\resources
 2021-02-27 22:37:22,858 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-27 22:37:22,858 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\test\resources
+<<<<<<< HEAD
 2021-02-27 22:42:21,904 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-27 22:42:21,905 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\main\resources
 2021-02-27 22:42:21,907 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
@@ -824,3 +825,5 @@ java.nio.file.NoSuchFileException: C:\Users\KidusMT\Desktop\MPP-Project\Attendan
 2021-02-28 05:21:07,380 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\main\resources
 2021-02-28 05:21:07,382 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-02-28 05:21:07,382 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\KidusMT\Desktop\MPP-Project\AttendanceManagmenetSystem\AttendanceManagementSystem\src\test\resources
+=======
+>>>>>>> login
