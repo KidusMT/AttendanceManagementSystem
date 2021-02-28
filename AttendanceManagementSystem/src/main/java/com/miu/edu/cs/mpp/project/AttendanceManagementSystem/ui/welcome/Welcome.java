@@ -14,7 +14,6 @@ import javafx.stage.Stage;
 
 public class Welcome extends Application {
 
-	
 	public void start(Stage stage) throws IOException {
         var javaVersion = SystemInfo.javaVersion();
         var javafxVersion = SystemInfo.javafxVersion();
