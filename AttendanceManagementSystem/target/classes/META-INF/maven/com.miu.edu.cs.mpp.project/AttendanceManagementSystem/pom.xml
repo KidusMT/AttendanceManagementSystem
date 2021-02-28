@@ -15,18 +15,10 @@
             <artifactId>javafx-controls</artifactId>
             <version>13</version>
         </dependency>
-<<<<<<< HEAD
-        
         <dependency>
     		<groupId>org.openjfx</groupId>
     		<artifactId>javafx-fxml</artifactId>
     		<version>13</version>
-=======
-        <dependency>
-		    <groupId>org.openjfx</groupId>
-		    <artifactId>javafx-fxml</artifactId>
-		    <version>13</version>
->>>>>>> login
 		</dependency>
     </dependencies>
     <build>
@@ -47,11 +39,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-<<<<<<< HEAD
                             <mainClass>com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance.AttendanceGenerate</mainClass>
-=======
-                            <mainClass>ui.login.Login</mainClass>
->>>>>>> login
                         </configuration>
                     </execution>
                     <execution>
