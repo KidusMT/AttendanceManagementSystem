@@ -55,6 +55,12 @@ public void setInstructor(Instructor instructor) {
 public List<AttendanceSheetEntry> getAttendanceEntries() {
 	return attendanceEntries;
 }
+@Override
+public String toString() {
+	return "DayAttendanceSheet [date=" + date + ", semester=" + semester +  "]";
+}
+
+
 
 
 }

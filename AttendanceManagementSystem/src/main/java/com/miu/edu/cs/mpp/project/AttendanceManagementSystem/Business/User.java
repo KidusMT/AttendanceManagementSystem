@@ -30,5 +30,10 @@ public void setPassword(String password) {
 public Instructor getAccountOwner() {
 	return accountOwner;
 }
-  
+@Override
+public String toString() {
+	return "User [userName=" + userName + ", password=" + password +  "]";
+}
+
+
 }

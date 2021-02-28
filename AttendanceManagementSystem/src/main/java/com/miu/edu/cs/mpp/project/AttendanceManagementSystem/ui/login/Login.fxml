@@ -36,7 +36,7 @@
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="80.291015625" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <PasswordField fx:id="passwordField" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button fx:id="loginBtn" onAction="#printOutput" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Login" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <Button fx:id="loginBtn" onAction="#loginbuttonControler" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Login" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
