@@ -28,8 +28,8 @@ public class MyDataModel {
 		this.lastName = lastName;
 	    
 		this.Date = date;
-		this.checkBox1 = new CheckBox("Left");
-		this.checkBox2 = new CheckBox("Left");
+		this.checkBox1 = new CheckBox(" ");
+		this.checkBox2 = new CheckBox(" ");
 	}
 
 /*

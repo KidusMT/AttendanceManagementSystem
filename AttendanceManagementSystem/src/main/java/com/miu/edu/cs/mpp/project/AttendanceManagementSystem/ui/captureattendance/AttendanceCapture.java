@@ -159,6 +159,8 @@ public class AttendanceCapture extends Application implements Initializable{
 			map.put(submitModel.getFirstName(), submitModel);
 		}
 		
+		myTableView.getItems().clear();
+		
 	};
 
     public static void main(String[] args) {
