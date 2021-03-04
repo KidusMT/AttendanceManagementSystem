@@ -9,11 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="693.0" text="MARK ATTENDANCE" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance.AttendanceGenerate">
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="693.0" text="MARK ATTENDANCE" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance.AttendanceGenerate">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
-            <TableView  layoutX="42.0" layoutY="116.0" prefHeight="392.0" prefWidth="610.0">
+            <TableView fx:id="tableHView"  layoutX="42.0" layoutY="116.0" prefHeight="392.0" prefWidth="610.0">
               <columns>
                   <TableColumn fx:id="firstName" prefWidth="215.0" text="First Name" />
                   <TableColumn fx:id="lastName" prefWidth="218.0" text="LastName" />
