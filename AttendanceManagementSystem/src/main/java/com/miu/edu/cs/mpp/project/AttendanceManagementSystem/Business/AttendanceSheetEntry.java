@@ -1,36 +1,42 @@
 package com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business;
 
 public class AttendanceSheetEntry {
-private boolean status;
+private SessionType session = SessionType.NONE;
 private Student student;
 private DayAttendanceSheet attendanceSheet;
 
+enum SessionType {
+	PM, AM, NONE
+}
 
 
-
-public AttendanceSheetEntry(boolean status, Student student, DayAttendanceSheet dayAttendanceSheet) {
+public AttendanceSheetEntry(SessionType session,Student student, DayAttendanceSheet dayAttendanceSheet) {
 	super();
-	this.status = status;
+	this.session = session;
 	this.student=student;
 	this.attendanceSheet=dayAttendanceSheet;
 }
 
 
-public boolean getStatus() {
-	return status;
+public SessionType getSession() {
+	return session;
 }
-public void setStatus(boolean status) {
-	this.status = status;
+public void setSession(SessionType status) {
+	this.session = status;
 }
 
 public void setAttendanceSheet(DayAttendanceSheet entry) {
 	this.attendanceSheet=entry;
 }
 
+public Student getStudent() {
+	return student;
+}
+
 
 @Override
 public String toString() {
-	return "AttendanceSheetEntry [status=" + status + ", student=" + student +  "]";
+	return "AttendanceSheetEntry [status=" + session + ", student=" + student +  "]";
 }
 
 

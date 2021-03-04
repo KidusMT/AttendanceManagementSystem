@@ -13,14 +13,11 @@
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
-            <TableView layoutX="42.0" layoutY="116.0" prefHeight="392.0" prefWidth="610.0">
+            <TableView  layoutX="42.0" layoutY="116.0" prefHeight="392.0" prefWidth="610.0">
               <columns>
-                  <TableColumn prefWidth="75.0" text="First Name" />
-                  <TableColumn prefWidth="75.0" text="LastName" />
-                  <TableColumn prefWidth="103.0" text="AM" />
-                  <TableColumn prefWidth="103.0" text="PM" />
-                  <TableColumn prefWidth="89.0" text="Date" />
-                  <TableColumn prefWidth="102.0" text="Present" />
+                  <TableColumn fx:id="firstName" prefWidth="215.0" text="First Name" />
+                  <TableColumn fx:id="lastName" prefWidth="218.0" text="LastName" />
+                  <TableColumn fx:id="days" prefWidth="176.0" text="Days" />
               </columns>
             </TableView>
             <TextArea layoutX="45.0" layoutY="10.0" prefHeight="88.0" prefWidth="252.0" text="SECTION A&#10;Instructor: Obina Kalu&#10;Room-V32&#10;Couse.Modern Programming Practices" />
