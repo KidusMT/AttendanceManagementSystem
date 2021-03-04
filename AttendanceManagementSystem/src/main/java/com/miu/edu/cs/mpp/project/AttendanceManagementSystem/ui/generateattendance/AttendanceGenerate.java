@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.miu.edu.cs.mpp.project.AttendanceManagementSystem.SystemInfo;
+import com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.AttendanceSheetEntry;
 import com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.DataAccess;
 import com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.DayAttendanceSheet;
 import com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.MockData;
@@ -70,14 +71,24 @@ public class AttendanceGenerate extends Application {
     }
 	
 	@FXML
-	public void findRecord(ActionEvent event) {
-		
+	public void findRecord(ActionEvent event) {    	 
+    	 // starts by clearing old data
+    	 data.clear();
+    	 List<DayAttendanceSheet> attendanceList = DataAccess.fetchAttendanceSheet(ReportType.DAILY);
+    	 List<Student> students = MockData.getStudents();
+    	 for(int k=0; k<students.size(); k++) {
+    		 GenerateTableData tableData = new GenerateTableData();
+    		 tableData.setFirstName(students.get(k).getFirstName());
+    		 tableData.setLastName(students.get(k).getLastName());
+    		 tableData.setDays(String.valueOf(calculateDaysOfPresence(attendanceList, students.get(k))));
+    		 data.add(tableData);
+    	 }    	 
+    	 
+    	 TableViewLoad(data);
 	}
 	
 	private void TableViewLoad(ObservableList<GenerateTableData> ticketData) {
-
 		tableHView.setItems(getTicketData());
-
     }
 	
 	public ObservableList<GenerateTableData> getTicketData() {
@@ -94,31 +105,42 @@ public class AttendanceGenerate extends Application {
     	 fromDateField.setValue(startDate);
     	 toDateField.setValue(endDdate);
     	 
+    	 // starts by clearing old data
+    	 data.clear();
     	 List<DayAttendanceSheet> attendanceList = DataAccess.fetchAttendanceSheet(ReportType.WEEKLY);
-    	 
     	 List<Student> students = MockData.getStudents();
     	 for(int k=0; k<students.size(); k++) {
     		 GenerateTableData tableData = new GenerateTableData();
-    		 int days = 0;
     		 tableData.setFirstName(students.get(k).getFirstName());
     		 tableData.setLastName(students.get(k).getLastName());
-    		 System.out.println(students.get(k).getFirstName());
-    		 System.out.println(students.get(k).getLastName());
-    		 for(int i = 0; i < attendanceList.size(); i++) {
-	    		 for(int j=0; j< attendanceList.get(i).getAttendanceEntries().size(); j++) {
-	    			 if(students.get(k).getId().equals(attendanceList.get(i).getAttendanceEntries().get(j).getStudent().getId()))
-	    				 days++;
-	    		 }    		 
-    		 }
-    		 System.out.println(String.valueOf(days));
-    		 System.out.println("==============================");
-    		 tableData.setDays(String.valueOf(days));
+    		 tableData.setDays(String.valueOf(calculateDaysOfPresence(attendanceList, students.get(k))));
     		 data.add(tableData);
     	 }    	 
     	 
     	 TableViewLoad(data);
-//    	 tableView.setItems(data);
      };
+     
+     public double calculateDaysOfPresence(List<DayAttendanceSheet> attendanceList, Student student) {
+    	 double days = 0;
+    	 for(int i = 0; i < attendanceList.size(); i++) {
+    		 for(int j=0; j< attendanceList.get(i).getAttendanceEntries().size(); j++) {
+    			 AttendanceSheetEntry currentAttendance = attendanceList.get(i).getAttendanceEntries().get(j);
+    			
+    			 if(student.getId().equals(currentAttendance.getStudent().getId())) {
+    				 // if am and pm == 1 day
+    				 // is am or pm == 0.5 day
+    				 // if neither am nor pm == 0	    				 
+    				 if(currentAttendance.isAfternoon_PM() && currentAttendance.isMorning_AM()) {
+    				   days++;
+    				 } else if(currentAttendance.isMorning_AM() || currentAttendance.isAfternoon_PM()) {
+    					 days += 0.5;
+    				 }
+    			 }	    				 
+    		 }    		 
+		 }
+    	 
+    	 return days;
+     }
      
      @FXML
      public void fetchThisMonthAttendance(ActionEvent event) 
@@ -128,5 +150,19 @@ public class AttendanceGenerate extends Application {
     	 System.out.println(startDate.toString() +" <> "+ endDdate.toString());
     	 fromDateField.setValue(startDate);
     	 toDateField.setValue(endDdate);
+    	 
+    	 // starts by clearing old data
+    	 data.clear();
+    	 List<DayAttendanceSheet> attendanceList = DataAccess.fetchAttendanceSheet(ReportType.MONTHLY);
+    	 List<Student> students = MockData.getStudents();
+    	 for(int k=0; k<students.size(); k++) {
+    		 GenerateTableData tableData = new GenerateTableData();
+    		 tableData.setFirstName(students.get(k).getFirstName());
+    		 tableData.setLastName(students.get(k).getLastName());
+    		 tableData.setDays(String.valueOf(calculateDaysOfPresence(attendanceList, students.get(k))));
+    		 data.add(tableData);
+    	 }    	 
+    	 
+    	 TableViewLoad(data);
      };
 }

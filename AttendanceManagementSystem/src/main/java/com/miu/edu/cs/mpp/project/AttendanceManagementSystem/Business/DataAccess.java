@@ -13,6 +13,8 @@ public class DataAccess {
    	 	LocalDate endDdate = null;
 		switch(repType) {
 		case DAILY:// is going to be a little bit different. Need another argument to fetch with the selection date
+			startDate = LocalDate.now().minusDays(1);
+	   	 	endDdate = LocalDate.now();
 			break;
 		case WEEKLY:
 			startDate = LocalDate.now().minusWeeks(1);
