@@ -9,4 +9,6 @@ module com.miu.edu.cs.mpp.project.AttendanceManagementSystem {
     exports com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generateattendance;
     exports com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.welcome;
     exports com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.login;
+//    exports com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.GenerateTableData;
+//    opens com.miu.edu.cs.mpp.project.AttendanceManagementSystem.Business.GenerateTableData to javafx.graphics;
 }

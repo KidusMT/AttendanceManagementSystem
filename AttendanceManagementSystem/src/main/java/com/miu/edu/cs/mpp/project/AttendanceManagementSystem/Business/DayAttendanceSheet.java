@@ -13,14 +13,14 @@ private Instructor instructor;
 private List<AttendanceSheetEntry> attendanceEntries;
 
 
-public DayAttendanceSheet(LocalDate date, String semester, AttendanceSheetEntry firstAttendanceEntry) {
-	super();
+public DayAttendanceSheet(LocalDate date, String semester/* , AttendanceSheetEntry firstAttendanceEntry */) {
+//	super();// --> what is this super keyword for? 
 	this.date = date;
 	this.semester = semester;
 	
 	attendanceEntries=new ArrayList<AttendanceSheetEntry>(); //1 to 1..*
-	firstAttendanceEntry.setAttendanceSheet(this);
-	attendanceEntries.add(firstAttendanceEntry);
+//	firstAttendanceEntry.setAttendanceSheet(this);
+//	attendanceEntries.add(firstAttendanceEntry);
 }
 public LocalDate getDate() {
 	return date;
