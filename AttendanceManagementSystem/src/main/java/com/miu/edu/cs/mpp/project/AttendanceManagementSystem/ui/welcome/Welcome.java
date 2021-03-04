@@ -50,22 +50,7 @@ public class Welcome extends Application {
 	        e.printStackTrace();
 	    }
     };
-    
-    @FXML
-    public void viewAttendance(ActionEvent event) 
-    {
-      	System.out.println("viewAttendance");
-	   	Parent attendanceGenerateRoot;
-	    try {
-	    	attendanceGenerateRoot = FXMLLoader.load(getClass().getResource("/fxml/AttendanceGenerate.fxml"));
-	        Stage stage = new Stage();
-	        stage.setTitle("My New Stage Title");
-	        stage.setScene(new Scene(attendanceGenerateRoot));
-	        stage.show();
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-    };
+
     
     @FXML
     public void generateReprot(ActionEvent event) 

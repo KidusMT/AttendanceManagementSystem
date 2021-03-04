@@ -15,9 +15,8 @@
                   <Font size="32.0" />
                </font>
             </Text>
-            <Button onAction="#markAttendance"  layoutX="208.0" layoutY="281.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="270.0" text="Mark Attendance" />
-            <Button onAction="#viewAttendance" layoutX="208.0" layoutY="198.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="270.0" text="View Attendance" />
-            <Button onAction="#generateReprot" layoutX="208.0" layoutY="362.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="270.0" text="Generate Reprot" />
+            <Button layoutX="208.0" layoutY="196.0" mnemonicParsing="false" onAction="#markAttendance" prefHeight="54.0" prefWidth="270.0" text="Mark Attendance" />
+            <Button layoutX="208.0" layoutY="277.0" mnemonicParsing="false" onAction="#generateReprot" prefHeight="54.0" prefWidth="270.0" text="Generate Reprot" />
             <Text layoutX="212.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What do yo want to do? Select menu item below." wrappingWidth="267.13671875" />
          </children></AnchorPane>
   </content>
