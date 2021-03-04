@@ -13,16 +13,14 @@ import javafx.scene.control.Label;
 import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Login extends Application {
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
-
+	public void start(Stage primaryStage) throws Exception {  
 		Parent root = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
-	    
         Scene scene = new Scene(root);
-    
         primaryStage.setTitle("FXML Welcome");
         primaryStage.setScene(scene);
         primaryStage.show();
