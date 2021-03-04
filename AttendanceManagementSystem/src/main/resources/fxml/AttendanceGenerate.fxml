@@ -24,7 +24,7 @@ fx:controller="com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.generate
             <TextArea layoutX="45.0" layoutY="10.0" prefHeight="88.0" prefWidth="252.0" text="SECTION A&#10;Instructor: Obina Kalu&#10;Room-V32&#10;Couse.Modern Programming Practices" />
             <DatePicker fx:id="fromDateField" layoutX="326.0" layoutY="75.0" prefHeight="25.0" prefWidth="118.0" />
             <Button layoutX="327.0" layoutY="12.0" mnemonicParsing="false" onAction="#fetchThisWeekAttendance" prefHeight="31.0" prefWidth="115.0" text="This Week" />
-            <Button layoutX="465.0" layoutY="12.0" mnemonicParsing="false" onAction="#fetchThisMonthAttendance" prefHeight="31.0" prefWidth="115.0" text="This Week" />
+            <Button layoutX="465.0" layoutY="12.0" mnemonicParsing="false" onAction="#fetchThisMonthAttendance" prefHeight="31.0" prefWidth="115.0" text="This Month" />
             <Button layoutX="844.0" layoutY="196.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="115.0" text="This Week" />
             <Button layoutX="603.0" layoutY="75.0" mnemonicParsing="false" onAction="#findRecord" prefHeight="25.0" prefWidth="42.0" text="Find" />
             <DatePicker fx:id="toDateField" layoutX="464.0" layoutY="75.0" prefHeight="25.0" prefWidth="116.0" />
