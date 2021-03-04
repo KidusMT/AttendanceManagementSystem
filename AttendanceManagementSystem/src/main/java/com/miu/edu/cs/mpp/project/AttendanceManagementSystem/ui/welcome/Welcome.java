@@ -41,7 +41,7 @@ public class Welcome extends Application {
    	 	System.out.println("markAttendance");
 	   	Parent attendanceGenerateRoot;
 	    try {
-	    	attendanceGenerateRoot = FXMLLoader.load(getClass().getResource("/fxml/AttendanceGenerate.fxml"));
+	    	attendanceGenerateRoot = FXMLLoader.load(getClass().getResource("/fxml/captureAttendance.fxml"));
 	        Stage stage = new Stage();
 	        stage.setTitle("My New Stage Title");
 	        stage.setScene(new Scene(attendanceGenerateRoot));
