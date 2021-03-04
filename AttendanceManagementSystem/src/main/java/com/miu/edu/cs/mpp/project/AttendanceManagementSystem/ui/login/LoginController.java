@@ -27,9 +27,9 @@ public class LoginController {
 		
 	}
 	
-	 public void initialize() {
+	public void initialize() {
 		 
-	 }
+	}
 
 	@FXML
 	public TextField usernameField;
