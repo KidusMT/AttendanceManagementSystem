@@ -105,7 +105,7 @@ public class AttendanceCapture extends Application implements Initializable{
 		//TableView.getItems().add("c");
 		//tableView.getItems().add("d");
 		
-	myTableView.setItems(getItemsToAdd());
+		myTableView.setItems(getItemsToAdd());
 	};
 	
 	
