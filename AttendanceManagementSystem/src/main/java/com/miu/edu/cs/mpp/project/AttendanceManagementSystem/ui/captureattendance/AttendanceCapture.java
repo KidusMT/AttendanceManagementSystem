@@ -90,11 +90,9 @@ public class AttendanceCapture extends Application implements Initializable{
 		lastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
 		
 		Date.setCellValueFactory(new PropertyValueFactory<>("Date"));
-		checkBox1
-			.setCellValueFactory(new PropertyValueFactory<>("checkBox1"));
+		checkBox1.setCellValueFactory(new PropertyValueFactory<>("checkBox1"));
 		
-		checkBox2
-		.setCellValueFactory(new PropertyValueFactory<>("checkBox2"));
+		checkBox2.setCellValueFactory(new PropertyValueFactory<>("checkBox2"));
 
 		
 		}
@@ -158,8 +156,6 @@ public class AttendanceCapture extends Application implements Initializable{
 			System.out.print(submitModel.toString());		
 			map.put(submitModel.getFirstName(), submitModel);
 		}
-		
-		myTableView.getItems().clear();
 		
 	};
 
