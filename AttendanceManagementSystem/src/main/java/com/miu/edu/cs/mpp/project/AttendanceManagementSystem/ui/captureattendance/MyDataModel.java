@@ -3,64 +3,72 @@ package com.miu.edu.cs.mpp.project.AttendanceManagementSystem.ui.captureattendan
 import java.time.LocalDate;
 
 import javafx.beans.property.SimpleStringProperty;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ToggleButton;
 
+/**
+ * @author Bruke Abebe
+ *
+ */
 public class MyDataModel {
 
-	
+
 	private String firstName ;
 	private String lastName ;
-	private  String session;
+	public  enum  Session {AM, PM};
 	private LocalDate Date;
-	private Boolean present;
+	private CheckBox checkBox1;
+	//private Session sessionPM;
+	//private Session sessionAM;
+	private CheckBox checkBox2;
 
-
-	public MyDataModel(String firstName, String lastName, String session, LocalDate date, Boolean present) {
-		super();
+	public MyDataModel(String firstName, String lastName, LocalDate date) {
+		
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.session = session;
+	    
 		this.Date = date;
-		this.present = present;
+		this.checkBox1 = new CheckBox("Left");
+		this.checkBox2 = new CheckBox("Left");
 	}
 
+/*
+	public MyDataModel(String firstName2, String lastName2, String session2, Object date2, ToggleButton toggleButton) {
+		// TODO Auto-generated constructor stub
+	}
 
-	
-
-
-	
-
-
-
-
+*/
 	public String getFirstName() {
 		return firstName;
 	}
 
+	public CheckBox getCheckBox1() {
+		return checkBox1;
+	}
+
+	public void setCheckBox1(CheckBox checkBox1) {
+		this.checkBox1 = checkBox1;
+	}
+
+	public CheckBox getCheckBox2() {
+		return checkBox2;
+	}
+
+	public void setCheckBox2(CheckBox checkBox2) {
+		this.checkBox2 = checkBox2;
+	}
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-
 	public String getLastName() {
 		return lastName;
 	}
 
-
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-
-	public String getSession() {
-		return session;
-	}
-
-
-	public void setSession(String session) {
-		this.session = session;
-	}
-
 
 	public LocalDate getDate() {
 		return Date;
@@ -71,7 +79,7 @@ public class MyDataModel {
 		this.Date = date;
 	}
 
-
+/*
 	public Boolean getPresent() {
 		return present;
 	}
@@ -80,7 +88,7 @@ public class MyDataModel {
 	public void setPresent(Boolean present) {
 		this.present = present;
 	}
-	
+	*/
 	
 
 	
